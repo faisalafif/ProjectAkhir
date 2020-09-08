@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ProjectAkhir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="komentar">komentar</string>
+    <string name="like_lah_kasihan_belum_ada_yang_like_d">like lah, kasihan belum ada yang like :D</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.faislll.projectakhir.aktivitas.AktivityLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Silahkan Login"
+            android:textColor="@color/babu"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/e_text_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:autofillHints="email"
+            android:background="@color/babu"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/warnaPutih"
+            android:textColorHint="@color/warnaPutih"
+            tools:ignore="RtlSymmetry" />
+
+        <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+            android:id="@+id/e_text_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:autofillHints="password"
+            android:background="@color/babu"
+            android:hint="Password"
+            android:textColor="@color/warnaPutih"
+            android:textColorHint="@color/warnaPutih"
+            android:textSize="15sp"
+            app:drawable_hide="@drawable/ic_tampil_password"
+            app:drawable_show="@drawable/ic_sembunyikan_password"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/colorAccent"
+            android:paddingStart="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Login" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/login_dengan_google"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="0dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <TextView
+            android:id="@+id/txt_view_buat_akun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Buat Akun"
+            android:textColor="@color/kuning" />
+
+        <ProgressBar
+            android:id="@+id/loading_login"
+            android:layout_width="64dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="20dp"
+            android:scrollbarSize="100dp"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>
